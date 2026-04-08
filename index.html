@@ -9,7 +9,7 @@
     function copyText() {
         // 1. id가 'target-text'인 요소의 글자(innerText)를 가져옵니다.
         const text = document.getElementById("target-text").innerText;
-
+alert("target-text.innerText:" + text);
         // 2. 클립보드 API를 사용하여 텍스트를 복사합니다.
         navigator.clipboard.writeText(text).then(() => {
             // 3. 복사 완료 후 사용자에게 피드백 제공
